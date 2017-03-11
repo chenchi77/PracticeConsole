@@ -3,7 +3,7 @@ using System.Reflection;
 using Autofac.Core;
 using log4net;
 
-namespace Core.Module
+namespace Core.AutofacModule
 {
 	public class LoggingModule : Autofac.Module
 	{

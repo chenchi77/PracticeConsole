@@ -1,5 +1,5 @@
 ﻿using Autofac;
-using Core.Module;
+using Core.AutofacModule;
 
 namespace PracticeConsole
 {

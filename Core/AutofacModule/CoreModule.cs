@@ -2,7 +2,7 @@
 using Autofac;
 using Core.Service;
 using Core.Enum;
-namespace Core.Module
+namespace Core.AutofacModule
 {
 	public class CoreModule : Autofac.Module
 	{
