@@ -2,6 +2,8 @@
 using Autofac;
 using Core.Service.Calculator;
 using Core.Enum;
+using Autofac.Core;
+
 namespace Core.AutofacModule
 {
 	public class CoreModule : Autofac.Module
@@ -19,6 +21,14 @@ namespace Core.AutofacModule
 					return componentContext.ResolveKeyed<ICalculatorService>(memberType);
 				};
 			});
+
+			builder.RegisterType<MemberService>().WithParameter(
+				new ResolvedParameter(
+					(pi, ctx) => pi.ParameterType == typeof(Func<MemberType, ICalculatorService>) && pi.Name == "calculatoryFactory",
+					(pi, ctx) => ctx.Resolve<Func<MemberType, ICalculatorService>>()
+				)
+			);
+
 			base.Load(builder);
 		}
 	}

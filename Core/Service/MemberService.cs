@@ -6,16 +6,15 @@ namespace Core
 {
 	public class MemberService
 	{
-		Func<MemberType, ICalculatorService> _calculatorFactory;
-		public MemberService(Func<MemberType, ICalculatorService> calculatoryFactory)
+		ICalculatorService _calculatorService;
+		public MemberService(Func<MemberType, ICalculatorService> calculatoryFactory, MemberType memberType)
 		{
-			_calculatorFactory = calculatoryFactory;
+			_calculatorService = calculatoryFactory(memberType);
 		}
 
-		public decimal CheckOut(MemberType memberType, int amount)
+		public decimal CheckOut(int amount)
 		{
-			var service = _calculatorFactory(memberType);
-			return service.Cal(amount);
+			return _calculatorService.Cal(amount);
 		}
 	}
 }
