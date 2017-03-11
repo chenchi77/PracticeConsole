@@ -1,6 +1,6 @@
 ﻿using System;
 using Autofac;
-using Core.Service;
+using Core.Service.Calculator;
 using Core.Enum;
 namespace Core.AutofacModule
 {
@@ -8,7 +8,7 @@ namespace Core.AutofacModule
 	{
 		protected override void Load(ContainerBuilder builder)
 		{
-			builder.RegisterType<CalculatorService>().As<ICalculatorService>().Keyed<ICalculatorService>(MemberType.Gerenal);
+			builder.RegisterType<GerenalCalculatorService>().As<ICalculatorService>().Keyed<ICalculatorService>(MemberType.Gerenal);
 			builder.RegisterType<GoldCalculatorService>().As<ICalculatorService>().Keyed<ICalculatorService>(MemberType.Gold);
 			builder.RegisterType<SlaveCalculatorService>().As<ICalculatorService>().Keyed<ICalculatorService>(MemberType.Slave);
 

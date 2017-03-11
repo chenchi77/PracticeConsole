@@ -1,7 +1,6 @@
-﻿using System;
-using log4net;
+﻿using log4net;
 
-namespace Core.Service
+namespace Core.Service.Calculator
 {
 	public class GoldCalculatorService : CalculatorServiceBase, ICalculatorService
 	{

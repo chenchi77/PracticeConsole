@@ -39,12 +39,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Enum\MemberType.cs" />
     <Compile Include="AutofacModule\CoreModule.cs" />
-    <Compile Include="Service\CalculatorService.cs" />
-    <Compile Include="Service\CalculatorServiceBase.cs" />
-    <Compile Include="Service\GoldCalculatorService.cs" />
-    <Compile Include="Service\ICalculatorService.cs" />
-    <Compile Include="Service\SlaveCalculatorService.cs" />
     <Compile Include="AutofacModule\LoggingModule.cs" />
+    <Compile Include="Service\Calculator\GerenalCalculatorService.cs" />
+    <Compile Include="Service\Calculator\CalculatorServiceBase.cs" />
+    <Compile Include="Service\Calculator\GoldCalculatorService.cs" />
+    <Compile Include="Service\Calculator\ICalculatorService.cs" />
+    <Compile Include="Service\Calculator\SlaveCalculatorService.cs" />
+    <Compile Include="Service\MemberService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -53,6 +54,7 @@
     <Folder Include="Enum\" />
     <Folder Include="AutofacModule\" />
     <Folder Include="Service\" />
+    <Folder Include="Service\Calculator\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

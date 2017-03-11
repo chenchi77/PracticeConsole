@@ -1,6 +1,6 @@
 ﻿using log4net;
 
-namespace Core.Service
+namespace Core.Service.Calculator
 {
 	public class SlaveCalculatorService : CalculatorServiceBase, ICalculatorService
 	{

@@ -1,4 +1,4 @@
-﻿using Core.Service;
+using Core.Service.Calculator;
 using log4net;
 using Moq;
 using NUnit.Framework;
@@ -12,7 +12,7 @@ namespace CoreUnitTest
 		public void Test()
 		{
 			var logMock = new Mock<ILog>();
-			var service = new CalculatorService(logMock.Object);
+			var service = new GerenalCalculatorService(logMock.Object);
 			Assert.AreEqual(service.Cal(100), 100);
 		}
 	}

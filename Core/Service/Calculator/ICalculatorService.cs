@@ -1,4 +1,4 @@
-﻿namespace Core.Service
+﻿namespace Core.Service.Calculator
 {
 	public interface ICalculatorService
 	{

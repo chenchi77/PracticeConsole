@@ -1,7 +1,8 @@
 ﻿using System;
 using Autofac;
+using Core;
 using Core.Enum;
-using Core.Service;
+using Core.Service.Calculator;
 
 namespace PracticeConsole
 {
@@ -19,13 +20,13 @@ namespace PracticeConsole
 			Console.WriteLine(string.Format("Gerenal => {0}", Process(MemberType.Gerenal, amount)));
 		}
 
-		public static decimal Process(MemberType memberType, decimal amount)
+		public static decimal Process(MemberType memberType, int amount)
 		{
 			using (var scope = Container.BeginLifetimeScope())
 			{
 				var func = scope.Resolve<Func<MemberType, ICalculatorService>>();
-				var service = func(memberType);
-				return service.Cal(amount);
+				var service = new MemberService(func);
+				return service.CheckOut(memberType, amount);
 			}
 		}
 	}
