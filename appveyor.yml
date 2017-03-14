@@ -14,5 +14,4 @@ before_build:
 
 test:
   assemblies:
-    - test-assembly-A.dll
-    - '**\*UnitTest.dll'
+    - '*UnitTest.dll'
