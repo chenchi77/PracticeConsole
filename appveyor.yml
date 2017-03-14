@@ -14,4 +14,4 @@ before_build:
 
 test:
   assemblies:
-    - 'CoreUnitTest\bin\Debug\CoreUnitTest.dll'
+    - CoreUnitTest.dll
