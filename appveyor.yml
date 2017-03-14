@@ -11,3 +11,8 @@
 # scripts to run before build
 before_build:
   - nuget restore
+
+test:
+  assemblies:
+    - test-assembly-A.dll
+    - '**\*UnitTest.dll'
