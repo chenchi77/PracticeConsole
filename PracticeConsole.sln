@@ -5,8 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeConsole", "Practice
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{E559F8D2-9628-43E9-970A-9498C2AC0F62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreUnitTest", "CoreUnitTest\CoreUnitTest.csproj", "{C188ECAA-83B4-47D7-BC4B-E062D419FB2B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -21,9 +19,5 @@ Global
 		{E559F8D2-9628-43E9-970A-9498C2AC0F62}.Debug|x86.Build.0 = Debug|Any CPU
 		{E559F8D2-9628-43E9-970A-9498C2AC0F62}.Release|x86.ActiveCfg = Release|Any CPU
 		{E559F8D2-9628-43E9-970A-9498C2AC0F62}.Release|x86.Build.0 = Release|Any CPU
-		{C188ECAA-83B4-47D7-BC4B-E062D419FB2B}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{C188ECAA-83B4-47D7-BC4B-E062D419FB2B}.Debug|x86.Build.0 = Debug|Any CPU
-		{C188ECAA-83B4-47D7-BC4B-E062D419FB2B}.Release|x86.ActiveCfg = Release|Any CPU
-		{C188ECAA-83B4-47D7-BC4B-E062D419FB2B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
