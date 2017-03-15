@@ -46,7 +46,6 @@
     <Compile Include="Service\Calculator\ICalculatorService.cs" />
     <Compile Include="Service\Calculator\SlaveCalculatorService.cs" />
     <Compile Include="Service\MemberService.cs" />
-    <Compile Include="Service\IMemberService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
