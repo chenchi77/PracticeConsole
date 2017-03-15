@@ -12,6 +12,5 @@
 before_build:
   - nuget restore
 
-test:
-  assemblies:
-    - CoreUnitTest\bin\Debug\CoreUnitTest.dll
+test_script:
+  - cmd: nunit3-console CoreUnitTest/CoreUnitTest.csproj --result=myresults.xml;format=AppVeyor
